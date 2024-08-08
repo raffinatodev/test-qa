@@ -4,7 +4,7 @@ export const config = {
     expiresIn: '120d',
   },
   delay: {
-    min: 1,
-    max: 1,
+    min: 500,
+    max: 2000,
   },
 };
