@@ -30,7 +30,7 @@ export class UserController {
       }
 
       const user = {
-        id: faker.string.uuid(),
+        id: faker.datatype.uuid (),
         mail: input.mail,
         name: 'Raffinato QA',
       };
