@@ -46,6 +46,7 @@ As rotas privadas usam JWT para se autenticar.
 - Criar um fork publico do projeto para sua conta no github
 - Criar um branch com o nome development
 - Criar um projeto em jest isolado do projeto da api em um diretório com o nome de test
+- Todos os testes devem rodar isoladamente do projeto da api fazendo requisições em seus endpoint
 - Fazer commits conforme o progresso de inclussão dos teste
 - Criar um arquivo README.md detro do diretório criado para o teste documentando em como fazer o setup e rodar os testes.
 - Oraganizar o projeto da forma que achar melhor
