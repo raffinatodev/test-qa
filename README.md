@@ -7,6 +7,7 @@ ___
 O projeto contém uma api simples com um login, um CRUD de produtos e uma documentação 
 da api em swagger no endpoint: http://localhost:3000/doc, a api usa um banco de dados em memoria
 toda vez que a aplicação é iniciada a base de dados inicia vazia.
+As rotas privadas usam JWT para se autenticar.
 
 ### Login
 
@@ -45,6 +46,7 @@ toda vez que a aplicação é iniciada a base de dados inicia vazia.
 - Criar um fork publico do projeto para sua conta no github
 - Criar um branch com o nome development
 - Criar um projeto em jest isolado do projeto da api em um diretório com o nome de test
+- Todos os testes devem rodar isoladamente do projeto da api fazendo requisições em seus endpoint
 - Fazer commits conforme o progresso de inclussão dos teste
 - Criar um arquivo README.md detro do diretório criado para o teste documentando em como fazer o setup e rodar os testes.
 - Oraganizar o projeto da forma que achar melhor
@@ -61,8 +63,8 @@ toda vez que a aplicação é iniciada a base de dados inicia vazia.
 ## Requisitos para serem testados
 
 - **Login**
-  - Deve ser implementado um teste para acessar com as credêcias validas
-  - Deve ser implementado um teste de tentativa de acessar com credêcias inválidas 
+  - Deve ser implementado um teste para acessar com as credências validas
+  - Deve ser implementado um teste de tentativa de acessar com credências inválidas 
 - **Produtos**
   - Deve ser implementado um ou mais testes para criar um novo produto
   - Deve ser implementado um ou mais testes para editar um produto
@@ -75,5 +77,5 @@ toda vez que a aplicação é iniciada a base de dados inicia vazia.
 - Enviar por e-mail avisando que finalizou o teste com o link do repositório
 
     
-A descrição desse teste é um vaga em alguns aspectos de forma intencional, 
+A descrição desse teste é um pouco vaga em alguns aspectos de forma intencional, 
 sinta-se à vontade para pedir ajuda ou tirar duvidas caso ache necessário.
