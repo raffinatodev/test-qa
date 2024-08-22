@@ -61,7 +61,6 @@ export class ProductController {
     status: HttpStatus.OK,
   })
   public async findOne(
-    @Body() input: ProductInputCreateDto,
     @Param('id') productId: string,
   ): Promise<ProductEntity[]> {
     return delayRequest(async () => {
@@ -140,7 +139,6 @@ export class ProductController {
     status: HttpStatus.OK,
   })
   public async delete(
-    @Body() input: ProductInputCreateDto,
     @Param('id') productId: string,
   ): Promise<ProductEntity[]> {
     return delayRequest(async () => {
