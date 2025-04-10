@@ -1,0 +1,40 @@
+name: Testes Automatizados
+
+on:
+  push:
+    branches:
+      - development
+  pull_request:
+    branches:
+      - development
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositório
+        uses: actions/checkout@v3
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Instalar dependências da API
+        working-directory: ./api
+        run: yarn install
+
+      - name: Iniciar API
+        working-directory: ./api
+        run: |
+          nohup yarn start &
+          sleep 20
+          
+      - name: Instalar dependências dos testes
+        working-directory: ./test
+        run: yarn install
+
+      - name: Executar testes automatizados
+        working-directory: ./test
+        run: yarn test
